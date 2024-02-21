@@ -27,11 +27,12 @@
   src: url(../font/Vazirmatn-Regular.woff2);
 }
 .container {
-  padding: 108px 37px;
+  padding: 108px 38px;
 }
 
 body {
   font-family: vazir-medium;
+  direction: rtl;
 }
 body main .hero header nav {
   width: 100%;
@@ -87,6 +88,51 @@ body main .hero header .slide button {
   z-index: 2;
   font-family: vazir-medium;
   font-size: 15px;
+}
+body main .hero h3 {
+  width: 100%;
+  height: fit-content;
+  font-family: vazir-medium;
+  font-size: 20px;
+  color: #353535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+  margin-bottom: 20px;
+}
+body .content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body .content .box {
+  width: 287px;
+  height: 160px;
+  border-radius: 8px;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #417f56;
+}
+body .content .box img {
+  width: 240px;
+  height: 240px;
+}
+body .content .box button {
+  width: 155px;
+  height: 48px;
+  border-radius: 4px;
+  background-color: #e5f2e9;
+  font-family: vazir-regular;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  top: 10px;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
