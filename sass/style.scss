@@ -5,6 +5,7 @@ $green: #417f56;
 $gray: #717171;
 $black: #353535;
 $with: #e5f2e9;
+
 @mixin flex($justify, $items) {
   display: flex;
   justify-content: $justify;
@@ -21,29 +22,25 @@ body {
       header {
         nav {
           width: 100%;
-          height: 118px;
+          height: 33px;
           @include flex(space-between, center);
+          .shop {
+            margin-right: 166px;
+          }
 
           ul {
             width: 100%;
-            height: 118px;
-            @include flex(center, center);
-            flex-direction: row-reverse;
-            gap: 17px;
+            height: 33px;
+            @include flex(space-between, center);
+            gap: 20px;
             li {
               @include flex(flex-start, center);
 
               a {
                 font-family: vazir-bold;
                 color: $gray;
-                transition-delay: 2ml;
-                transition-duration: 1.3s;
               }
-              a:hover {
-                border-bottom: 2.5px solid $green;
-                transition-timing-function: linear;
-                color: $green;
-              }
+             
             }
           }
         }
@@ -51,15 +48,17 @@ body {
           width: 100%;
           height: 336px;
           @include flex(center, center);
+          flex-wrap: wrap;
           font-family: vazir-bold;
-          img {
-            position: absolute;
-          }
+          background-image: url(../images/picture/Slider.png);
+          background-repeat: no-repeat;
+          background-size: cover;
           h1 {
+            width: 100%;
             color: $with;
-            position: absolute;
             font-size: 40px;
-            line-height: 140%;
+            margin-top: 70px;
+            @include flex(center, flex-start);
           }
           button {
             width: 180px;
@@ -67,10 +66,10 @@ body {
             @extend %radius;
             color: $with;
             background-color: $green;
-            margin-top: 120px;
             z-index: 2;
             font-family: vazir-medium;
             font-size: 15px;
+            border: none;
           }
         }
       }
@@ -80,14 +79,14 @@ body {
         font-family: vazir-medium;
         font-size: 20px;
         color: $black;
-        @include flex(center, center);
+        @include flex(center, flex-start);
         margin-top: 48px;
-        margin-bottom: 20px;
+        margin-bottom: 60px;
       }
     }
   }
   .content {
-    @include flex(space-evenly, center);
+    @include flex(space-between, center);
     flex-wrap: wrap;
 
     .box {
@@ -116,12 +115,97 @@ body {
         border: none;
       }
     }
+  }
+  .abouts {
+    width: 100%;
+    height: 390px;
+    background-image: url(../images/picture/about.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include flex(space-between, flex-start);
+    color: #d9d9d9;
     .about {
-      img {
-        width: 100%;
-        height: 390px;
-        margin-top: 72px;
+      width: 600px;
+      height: 294px;
+      font-family: vazir-regular;
+
+      p {
+        width: 600px;
+        height: 180px;
+        font-size: 20px;
       }
+
+      h2 {
+        margin-bottom: 18px;
+      }
+      button {
+        width: 184px;
+        height: 40px;
+        background-color: transparent;
+        border-radius: 4px;
+        border: 2px solid $with;
+        color: $with;
+        font-family: vazir-medium;
+        font-size: 16px;
+        @include flex(center, center);
+        margin-right: 100%;
+      }
+    }
+    .icons {
+      width: 500px;
+      height: 280px;
+      @include flex(space-between, center);
+      flex-wrap: wrap;
+      .icon {
+        width: 392px;
+        height: 136px;
+        @include flex(space-between, center);
+
+        .one {
+          width: 152px;
+          height: 136px;
+          @include flex(center, flex-start);
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+  .menu {
+    width: 100%;
+    height: 344px;
+    @include flex(space-between, center);
+    flex-wrap: wrap;
+    .title {
+      width: 100%;
+      height: fit-content;
+      @include flex(center, center);
+      h3 {
+        font-family: vazir-bold;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .card {
+      width: 288px;
+      height: 344px;
+      @include flex(center, flex-start);
+      flex-wrap: wrap;
+      border-radius: 8px;
+      border: 2px solid #d9d9d9;
+    }
+    img {
+      width: 288px;
+      height: 230px;
+    }
+    h4 {
+      font-family: vazir-semibold;
+      font-size: 20px;
+    }
+    p {
+      font-family: vazir-medium;
+      font-size: 14px;
+      text-align: center;
     }
   }
 }
