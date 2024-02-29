@@ -1,19 +1,8 @@
 @use "./resete";
 @use "./font";
 @use "./object";
-$green: #417f56;
-$gray: #717171;
-$black: #353535;
-$with: #e5f2e9;
-
-@mixin flex($justify, $items) {
-  display: flex;
-  justify-content: $justify;
-  align-items: $items;
-}
-%radius {
-  border-radius: 8px;
-}
+@use"./variables";
+@use"./branch";
 body {
   font-family: vazir-medium;
   direction: rtl;
