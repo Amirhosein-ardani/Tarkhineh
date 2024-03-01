@@ -1,8 +1,9 @@
 @use "./resete" as*;
 @use "./font" as*;
 @use "./object" as*;
-@use"./variables"as*;
 @use"./branch"as*;
+@use"./variables"as*;
+
 body {
   font-family: vazir-medium;
   direction: rtl;
