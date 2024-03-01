@@ -1,8 +1,8 @@
-@use "./resete";
-@use "./font";
-@use "./object";
-@use"./variables";
-@use"./branch";
+@use "./resete" as*;
+@use "./font" as*;
+@use "./object" as*;
+@use"./variables"as*;
+@use"./branch"as*;
 body {
   font-family: vazir-medium;
   direction: rtl;
@@ -296,3 +296,92 @@ body {
     }
   }
 }
+// body{
+//   main .main__branch {
+//     .hero {
+//       header {
+//         nav {
+//           width: 100%;
+//           height: 33px;
+  
+//           @include flex(space-between, center);
+//           .shop {
+//             margin-right: 166px;
+//           }
+  
+//           ul {
+//             width: 100%;
+//             height: 33px;
+//             @include flex(space-between, center);
+//             gap: 20px;
+//             li {
+//               @include flex(flex-start, center);
+  
+//               a {
+//                 font-family: vazir-bold;
+//                 color: $gray;
+//               }
+//             }
+//           }
+//         }
+//         .slide {
+//           width: 100%;
+//           height: 336px;
+//           @include flex(center, center);
+//           flex-wrap: wrap;
+//           font-family: vazir-bold;
+//           background-image: url(../images/picture/Slider-branch.png);
+//           background-repeat: no-repeat;
+//           background-size: cover;
+//           h1 {
+//             width: 100%;
+//             color: $with;
+//             font-size: 40px;
+//             margin-top: 70px;
+//             @include flex(center, flex-start);
+//           }
+//           button {
+//             width: 180px;
+//             height: 40px;
+//             @extend %radius;
+//             color: $with;
+//             background-color: $green;
+//             z-index: 2;
+//             font-family: vazir-medium;
+//             font-size: 15px;
+//             border: none;
+//           }
+//         }
+//       }
+//       .card-list {
+//         width: 100%;
+//         height: 417px;
+//         @include flex(space-between, center);
+//         background-color: blueviolet;
+  
+//         .card {
+//           width: 288px;
+//           height: 417px;
+//           border: 2px solid $gray;
+//           @extend %radius;
+//           @include flex(center, flex-start);
+//           flex-direction: column;
+//           background-color: aqua;
+  
+//           img {
+//             width: 288px;
+//             height: 240px;
+//             background-color: aqua;
+//           }
+//           h3 {
+//             font-family: vazir-semibold;
+//             font-size: 20px;
+//             color: $black;
+//             display: flex;
+//           }
+//         }
+//       }
+//     }
+//   }
+  
+// }

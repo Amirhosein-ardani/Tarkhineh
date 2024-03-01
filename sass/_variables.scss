@@ -3,7 +3,7 @@ $gray: #717171;
 $black: #353535;
 $with: #e5f2e9;
 
-@mixin flex($justify, $items) {
+@mixin flex($justify, $items){
   display: flex;
   justify-content: $justify;
   align-items: $items;

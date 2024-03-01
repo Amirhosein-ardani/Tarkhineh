@@ -30,8 +30,96 @@
   padding: 45px 108px;
 }
 
-body .content .box, body main .hero header .slide button {
+body main .hero header .slide button, body .content .box, main .main__branch .hero header .slide button, main .main__branch .hero .card-list .card {
   border-radius: 8px;
+}
+
+main .main__branch .hero header nav {
+  width: 100%;
+  height: 33px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .main__branch .hero header nav .shop {
+  margin-right: 166px;
+}
+main .main__branch .hero header nav ul {
+  width: 100%;
+  height: 33px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+main .main__branch .hero header nav ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .main__branch .hero header nav ul li a {
+  font-family: vazir-bold;
+  color: #717171;
+}
+main .main__branch .hero header .slide {
+  width: 100%;
+  height: 336px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: vazir-bold;
+  background-image: url(../images/picture/Slider-branch.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .main__branch .hero header .slide h1 {
+  width: 100%;
+  color: #e5f2e9;
+  font-size: 40px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+main .main__branch .hero header .slide button {
+  width: 180px;
+  height: 40px;
+  color: #e5f2e9;
+  background-color: #417f56;
+  z-index: 2;
+  font-family: vazir-medium;
+  font-size: 15px;
+  border: none;
+}
+main .main__branch .hero .card-list {
+  width: 100%;
+  height: 417px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blueviolet;
+}
+main .main__branch .hero .card-list .card {
+  width: 288px;
+  height: 417px;
+  border: 2px solid #717171;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: aqua;
+}
+main .main__branch .hero .card-list .card img {
+  width: 288px;
+  height: 240px;
+  background-color: aqua;
+}
+main .main__branch .hero .card-list .card h3 {
+  font-family: vazir-semibold;
+  font-size: 20px;
+  color: #353535;
+  display: flex;
 }
 
 body {
