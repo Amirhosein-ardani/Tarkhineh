@@ -26,25 +26,42 @@
   font-family: vazir-regular;
   src: url(../font/Vazirmatn-Regular.woff2);
 }
-.container {
+.acontainer {
   padding: 45px 108px;
 }
 
-body main .hero header .slide button, body .content .box, main .main__branch .hero header .slide button, main .main__branch .hero .card-list .card {
+.action {
+  color: #417f56;
+}
+
+body main .hero header .slide button, body .content .box, main.main__branch .hero header .slide button, main.main__branch .hero .card-list .card-two,
+main.main__branch .hero .popular-content .card-two,
+main.main__branch .hero .noniranian-content .card-two, main.main__branch .hero .card-list .card-two button,
+main.main__branch .hero .popular-content .card-two button,
+main.main__branch .hero .noniranian-content .card-two button {
   border-radius: 8px;
 }
 
-main .main__branch .hero header nav {
+main.main__branch .hero .action {
+  color: #417f56;
+}
+main.main__branch .hero .titer > h4 {
+  margin-top: 30px;
+  margin-right: 120px;
+  font-family: vazir-bold;
+  font-size: 24px;
+}
+main.main__branch .hero header nav {
   width: 100%;
   height: 33px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-main .main__branch .hero header nav .shop {
+main.main__branch .hero header nav .shop {
   margin-right: 166px;
 }
-main .main__branch .hero header nav ul {
+main.main__branch .hero header nav ul {
   width: 100%;
   height: 33px;
   display: flex;
@@ -52,16 +69,17 @@ main .main__branch .hero header nav ul {
   align-items: center;
   gap: 20px;
 }
-main .main__branch .hero header nav ul li {
+main.main__branch .hero header nav ul li {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-main .main__branch .hero header nav ul li a {
+main.main__branch .hero header nav ul li a {
   font-family: vazir-bold;
   color: #717171;
+  text-decoration: none;
 }
-main .main__branch .hero header .slide {
+main.main__branch .hero header .slide {
   width: 100%;
   height: 336px;
   display: flex;
@@ -73,7 +91,7 @@ main .main__branch .hero header .slide {
   background-repeat: no-repeat;
   background-size: cover;
 }
-main .main__branch .hero header .slide h1 {
+main.main__branch .hero header .slide h1 {
   width: 100%;
   color: #e5f2e9;
   font-size: 40px;
@@ -82,7 +100,7 @@ main .main__branch .hero header .slide h1 {
   justify-content: center;
   align-items: flex-start;
 }
-main .main__branch .hero header .slide button {
+main.main__branch .hero header .slide button {
   width: 180px;
   height: 40px;
   color: #e5f2e9;
@@ -92,39 +110,322 @@ main .main__branch .hero header .slide button {
   font-size: 15px;
   border: none;
 }
-main .main__branch .hero .card-list {
+main.main__branch .hero .card-list,
+main.main__branch .hero .popular-content,
+main.main__branch .hero .noniranian-content {
   width: 100%;
   height: 417px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: blueviolet;
-}
-main .main__branch .hero .card-list .card {
-  width: 288px;
-  height: 417px;
-  border: 2px solid #717171;
-  display: flex;
   justify-content: center;
   align-items: flex-start;
-  flex-direction: column;
-  background-color: aqua;
+  gap: 10px;
 }
-main .main__branch .hero .card-list .card img {
-  width: 288px;
-  height: 240px;
-  background-color: aqua;
-}
-main .main__branch .hero .card-list .card h3 {
-  font-family: vazir-semibold;
-  font-size: 20px;
-  color: #353535;
+main.main__branch .hero .card-list .card-two,
+main.main__branch .hero .popular-content .card-two,
+main.main__branch .hero .noniranian-content .card-two {
+  width: 320px;
+  height: 433px;
+  border: 2px solid #717171;
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+main.main__branch .hero .card-list .card-two img,
+main.main__branch .hero .popular-content .card-two img,
+main.main__branch .hero .noniranian-content .card-two img {
+  width: 288px;
+  height: 256px;
+}
+main.main__branch .hero .card-list .card-two h4,
+main.main__branch .hero .popular-content .card-two h4,
+main.main__branch .hero .noniranian-content .card-two h4 {
+  font-family: vazir-semibold;
+  margin-top: 7px;
+}
+main.main__branch .hero .card-list .card-two .card-content,
+main.main__branch .hero .popular-content .card-two .card-content,
+main.main__branch .hero .noniranian-content .card-two .card-content {
+  width: 250px;
+  height: 51px;
+  font-family: vazir-regular;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+main.main__branch .hero .card-list .card-two .card-content .card-content__text,
+main.main__branch .hero .popular-content .card-two .card-content .card-content__text,
+main.main__branch .hero .noniranian-content .card-two .card-content .card-content__text {
+  width: 113px;
+  height: 49px;
+  text-align: right;
+  font-size: 8px;
+}
+main.main__branch .hero .card-list .card-two .card-content .card-content__text .card-content__text-one,
+main.main__branch .hero .popular-content .card-two .card-content .card-content__text .card-content__text-one,
+main.main__branch .hero .noniranian-content .card-two .card-content .card-content__text .card-content__text-one {
+  width: 113px;
+  height: 18px;
+  color: #717171;
+  font-size: 8px;
+  margin-bottom: 7px;
+}
+main.main__branch .hero .card-list .card-two .card-content .card-content__text .card-content__text-two,
+main.main__branch .hero .popular-content .card-two .card-content .card-content__text .card-content__text-two,
+main.main__branch .hero .noniranian-content .card-two .card-content .card-content__text .card-content__text-two {
+  width: 78px;
+  height: 42px;
+  font-size: 10px;
+}
+main.main__branch .hero .card-list .card-two .card-content .card-content__price,
+main.main__branch .hero .popular-content .card-two .card-content .card-content__price,
+main.main__branch .hero .noniranian-content .card-two .card-content .card-content__price {
+  width: 97px;
+  height: 48px;
+  font-family: vazir-regular;
+}
+main.main__branch .hero .card-list .card-two .card-content .card-content__price .card-content__price-one,
+main.main__branch .hero .popular-content .card-two .card-content .card-content__price .card-content__price-one,
+main.main__branch .hero .noniranian-content .card-two .card-content .card-content__price .card-content__price-one {
+  width: 74px;
+  height: 18px;
+  font-size: 11px;
+  margin-bottom: 7px;
+  text-decoration-line: line-through;
+}
+main.main__branch .hero .card-list .card-two .card-content .card-content__price .card-content__price-one span,
+main.main__branch .hero .popular-content .card-two .card-content .card-content__price .card-content__price-one span,
+main.main__branch .hero .noniranian-content .card-two .card-content .card-content__price .card-content__price-one span {
+  margin-right: 3px;
+}
+main.main__branch .hero .card-list .card-two .card-content .card-content__price .card-content__price-two,
+main.main__branch .hero .popular-content .card-two .card-content .card-content__price .card-content__price-two,
+main.main__branch .hero .noniranian-content .card-two .card-content .card-content__price .card-content__price-two {
+  width: 94px;
+  height: 29px;
+  font-size: 15px;
+}
+main.main__branch .hero .card-list .card-two button,
+main.main__branch .hero .popular-content .card-two button,
+main.main__branch .hero .noniranian-content .card-two button {
+  width: 256px;
+  height: 40px;
+  background-color: #417f56;
+  color: #e5f2e9;
+  border: none;
+  font-family: vazir-medium;
+  font-size: 16px;
+  margin-top: 23.5px;
+}
+main.main__branch .hero .popular-list {
+  width: 100%;
+  height: 555px;
+  background-color: #417f56;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 100px;
+}
+main.main__branch .hero .popular-list .titer-two {
+  color: #e5f2e9;
+  font-family: vazir-bold;
+  font-size: 24px;
+  margin-bottom: 26px;
+}
+main.main__branch .hero .popular-list .popular-content,
+main.main__branch .hero .popular-list .noniranian-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+}
+main.main__branch .hero .popular-list .popular-content .card-two,
+main.main__branch .hero .popular-list .noniranian-content .card-two {
+  background-color: white;
+  border: none;
+}
+main.main__branch .hero .noniranian-list {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 100px;
+}
+main.main__branch .hero .noniranian-list .titer-three {
+  font-family: vazir-bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+main.main__branch .hero .noniranian-list .but-menu {
+  width: 184px;
+  height: 40px;
+  align-self: center;
+  border: 2px solid #417f56;
+  background-color: transparent;
+  margin-top: 30px;
+}
+main.main__branch .content-branch {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+main.main__branch .content-branch .titer-for {
+  font-family: vazir-bold;
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+main.main__branch .content-branch .content-branch__address {
+  width: 810px;
+  height: 130px;
+  border: 2px solid #417f56;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  background-color: white;
+  bottom: 30px;
+  border-radius: 8px;
+}
+main.main__branch .content-branch .content-branch__address div {
+  width: 210px;
+  height: 98px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main.main__branch .content-offers {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+main.main__branch .content-offers .titer-five {
+  font-family: vazir-bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+main.main__branch .content-offers .content-offres__one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+main.main__branch .content-offers .content-offres__one .card {
+  width: 600px;
+  height: 202px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main.main__branch .footer-branch {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 319px;
+  background-image: url(../images/picture/Footer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 1px;
+}
+main.main__branch .footer-branch ul {
+  width: 184px;
+  height: 192px;
+  padding: 10px;
+}
+main.main__branch .footer-branch ul h3 {
+  margin-bottom: 5px;
+  color: #e5f2e9;
+  font-family: vazir-bold;
+  font-size: 20px;
+}
+main.main__branch .footer-branch ul li {
+  margin-bottom: 13px;
+  color: #717171;
+  font-family: vazir-medium;
+  font-size: 14px;
+}
+main.main__branch .footer-branch .survey {
+  width: 600px;
+  height: 246px;
+}
+main.main__branch .footer-branch .survey .survey__text {
+  color: #e5f2e9;
+  font-family: vazir-bold;
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+main.main__branch .footer-branch .survey .survey__form {
+  width: 600px;
+  height: 163px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto;
+  padding: 4px;
+  gap: 7px;
+  color: #717171;
+}
+main.main__branch .footer-branch .survey .survey__form input {
+  border: 2px solid #717171;
+  border-radius: 5px;
+  padding: 7px;
+  background-color: transparent;
+}
+main.main__branch .footer-branch .survey .survey__form input:nth-child(1) {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+main.main__branch .footer-branch .survey .survey__form input:nth-child(2) {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+main.main__branch .footer-branch .survey .survey__form input:nth-child(3) {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+main.main__branch .footer-branch .survey .survey__form input:nth-child(4) {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+main.main__branch .footer-branch .survey .survey__button {
+  width: 183px;
+  height: 40px;
+  border-radius: 4px;
+  border: 2px solid #717171;
+  color: #e5f2e9;
+  font-family: vazir-medium;
+  font-size: 14px;
+  margin-right: 68.4%;
+  margin-top: 15px;
+  text-align: center;
+  padding-top: 5px;
 }
 
 body {
   font-family: vazir-medium;
   direction: rtl;
+}
+body main .hero .action {
+  color: #417f56;
 }
 body main .hero header nav {
   width: 100%;
@@ -300,6 +601,7 @@ body .menu {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 145px;
 }
 body .menu .title {
   width: 100%;
@@ -345,7 +647,7 @@ body footer {
   background-image: url(../images/picture/Footer.png);
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 160px;
+  margin-top: 1px;
 }
 body footer ul {
   width: 184px;
@@ -384,30 +686,31 @@ body footer .survey .survey__form {
   gap: 7px;
   color: #717171;
 }
-body footer .survey .survey__form div {
+body footer .survey .survey__form input {
   border: 2px solid #717171;
   border-radius: 5px;
   padding: 7px;
+  background-color: transparent;
 }
-body footer .survey .survey__form div:nth-child(1) {
+body footer .survey .survey__form input:nth-child(1) {
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 1;
   grid-column-end: 2;
 }
-body footer .survey .survey__form div:nth-child(2) {
+body footer .survey .survey__form input:nth-child(2) {
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 2;
 }
-body footer .survey .survey__form div:nth-child(3) {
+body footer .survey .survey__form input:nth-child(3) {
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 2;
 }
-body footer .survey .survey__form div:nth-child(4) {
+body footer .survey .survey__form input:nth-child(4) {
   grid-row-start: 1;
   grid-row-end: 4;
   grid-column-start: 2;
